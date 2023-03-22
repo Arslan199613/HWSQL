@@ -41,8 +41,7 @@ SELECT * FROM employees
 ORDER BY last_name DESC;
 6.
 SELECT*FROM employees
-WHERE first_name
-LIKE '_____%';
+WHERE length(first_name)>4;
 
 
 Задание №2
