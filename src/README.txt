@@ -63,7 +63,5 @@ SELECT MIN(age)
 FROM employees
 );
 4.
-SELECT first_name,age
-FROM employees
-WHERE NOT first_name='Иван'
-ORDER BY age ASC;
+select first_name, max(age) from employee
+group by first_name having count(first_name) >1 ;
